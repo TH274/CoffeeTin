@@ -134,7 +134,7 @@ public class CoffeeTinGame {
     public static void updateTin(char[] tin, char b1, char b2){
         char newBean = (b1 == b2) ? BLUE : GREEN;
             int index = getBean(BeansBag, newBean);
-            if (index != -1) {
+            if (index != 0) {
                 for (int i = 0; i < tin.length; i++) {
                     if (tin[i] == b1 || tin[i] == b2) {
                         tin[i] = newBean;
